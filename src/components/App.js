@@ -27,18 +27,18 @@ const App = () => {
         <input type='text' value={search} onChange={(event)=>Setsearch(event.target.value)}></input>
         <button onClick={addata}>Add-To-Do</button>
        </div>
-       <div>
+       <ul>
         {
           arr.map(element=>{
             return (
-              <div>
+              <li>
                 <p>{element}</p>
                 <button onClick={()=>deletefn(element)}>Delete</button>
-              </div>
+              </li>
             )
           })
         }
-       </div>
+       </ul>
     </div>
   )
 }

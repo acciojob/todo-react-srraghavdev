@@ -33,7 +33,7 @@ const App = () => {
             return (
               <li>
                 <p>{element}</p>
-                <button onClick={()=>deletefn(element)}>Delete</button>
+                <button onClick={()=>deletefn(element)}></button>
               </li>
             )
           })
